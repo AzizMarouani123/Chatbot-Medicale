@@ -1,0 +1,16 @@
+# Ignorer les fichiers volumineux et inutiles
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+venv/
+.env/
+*.tar.gz
+*.zip
+*.rar
+*.7z
+node_modules/
+*.db
+.DS_Store
