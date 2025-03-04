@@ -1,13 +1,13 @@
 # 🏥 Chatbot Médical 
 
-## 📌 Introduction
+##  Introduction
 
 Ce projet implémente un **chatbot médical** basé sur **BERT** (*all-MiniLM-L6-v2*), capable de répondre à des questions médicales en trouvant la réponse la plus pertinente dans un dataset.  
 L'application est développée en **Python** et déployée via **Docker** sur **Google Cloud Platform (GCP)**.
 
 ---
 
-## 🛠️ 1. Prétraitement des Données (Data Processing)
+##  1. Prétraitement des Données (Data Processing)
 
 Avant d'entraîner le modèle, il est crucial de **nettoyer et préparer les données** pour garantir de meilleures performances.
 
@@ -19,11 +19,11 @@ Avant d'entraîner le modèle, il est crucial de **nettoyer et préparer les don
    - Conversion des questions en vecteurs numériques.
    - Sauvegarde des **embeddings** dans un fichier `embeddings.pkl` pour éviter un recalcul à chaque exécution.
 
-💡 **Remarque** : Cette étape est exécutée **une seule fois** pour optimiser les performances.
+ **Remarque** : Cette étape est exécutée **une seule fois** pour optimiser les performances.
 
 ---
 
-## 🤖 2. Chatbot : Recherche de la Meilleure Réponse
+##  2. Chatbot : Recherche de la Meilleure Réponse
 
 Une fois les embeddings générés, le chatbot utilise la **similarité cosinus** pour comparer les questions posées avec celles du dataset.
 
@@ -40,7 +40,7 @@ Une fois les embeddings générés, le chatbot utilise la **similarité cosinus*
 
 ---
 
-## 🎨 3. Interface Utilisateur (Streamlit)
+##  3. Interface Utilisateur (Streamlit)
 
 Le chatbot est intégré à une application **Streamlit** pour une interaction fluide.
 
@@ -52,7 +52,7 @@ Le chatbot est intégré à une application **Streamlit** pour une interaction f
 
 ---
 
-## 📊 4. Évaluation des Performances
+##  4. Évaluation des Performances
 
 Une évaluation automatique est intégrée pour mesurer la qualité des réponses.
 
@@ -66,7 +66,7 @@ Une évaluation automatique est intégrée pour mesurer la qualité des réponse
 
 ---
 
-## 🏛️ 5. Création d'une Table SQL avec Cloud Final
+##  5. Création d'une Table SQL avec Cloud Final
 
 Une table SQL est créée à l'aide du **notebook cloud_final**, permettant de stocker des documents issus d'un fichier **CSV**.
 
@@ -77,7 +77,7 @@ Une table SQL est créée à l'aide du **notebook cloud_final**, permettant de s
 
 ---
 
-## 💪 6. Conteneurisation avec Docker
+##  6. Conteneurisation avec Docker
 
 Le projet est **conteneurisé avec Docker** pour faciliter le déploiement et garantir une exécution cohérente.
 
@@ -88,7 +88,7 @@ Le projet est **conteneurisé avec Docker** pour faciliter le déploiement et ga
 
 ---
 
-## ☁️ 7. Déploiement sur Google Cloud Platform (GCP)
+##  7. Déploiement sur Google Cloud Platform (GCP)
 
 L’application est **hébergée sur GCP** via **Cloud Run** pour une mise à l'échelle automatique.
 
@@ -97,7 +97,7 @@ L’application est **hébergée sur GCP** via **Cloud Run** pour une mise à l'
 2. **Déploiement de l’image** sur **Cloud Run**, qui alloue dynamiquement les ressources en fonction de la charge.
 3. **Mise à disposition d’une URL publique** permettant aux utilisateurs d’accéder à l’application.
 
-📌 **Lien vers l’application déployée** : [🔗 Accéder au Chatbot](https://mon-chatbot-medical.cloud)
+📌 **Lien vers l’application déployée** : [🔗 Accéder au Chatbot]([https://mon-chatbot-medical.cloud](https://feraziz-streamlit-1021317796643.europe-west1.run.app/))
 
 ---
 
