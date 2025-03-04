@@ -97,7 +97,7 @@ L’application est **hébergée sur GCP** via **Cloud Run** pour une mise à l'
 2. **Déploiement de l’image** sur **Cloud Run**, qui alloue dynamiquement les ressources en fonction de la charge.
 3. **Mise à disposition d’une URL publique** permettant aux utilisateurs d’accéder à l’application.
 
-📌 **Lien vers l’application déployée** : [🔗 Accéder au Chatbot]([https://mon-chatbot-medical.cloud](https://feraziz-streamlit-1021317796643.europe-west1.run.app/))
+📌 **Lien vers l’application déployée** : [🔗 Accéder au Chatbot](https://feraziz-streamlit-1021317796643.europe-west1.run.app/)
 
 ---
 
